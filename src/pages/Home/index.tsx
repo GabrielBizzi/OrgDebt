@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 import PageHeader from '../../components/PageHeader';
 import PageList from '../../components/PageList';
-import PageForm from '../../components/PageForm';
+import PageForm from '../../components/PageForm/index';
 
 function Home(){
     return (
@@ -19,10 +19,11 @@ function Home(){
                     
                 </main>
                 <div className="float-add-to-list">
-                    <a href="#">
+                    <button>
                         +
-                    </a>
+                    </button>
                 </div>
+                <button type="button" className="new-debt">+ Debt</button>
             </div>
         </div>
        

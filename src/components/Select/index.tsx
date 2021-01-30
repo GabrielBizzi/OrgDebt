@@ -26,7 +26,7 @@ interface ListUsersApi extends SelectProps, IUsers {
 
 const defaultUsers: ListUsersApi[] = [];
    
-const Select: React.FC<SelectProps> = ({label, name, options, ...rest}) => {
+const Select: React.FC<SelectProps> = ({ label, name, options, ...rest}) => {
     const [users, setUsers]: [ListUsersApi[], (users: ListUsersApi[]) => void] = React.useState(
         defaultUsers
       );
@@ -35,10 +35,6 @@ const Select: React.FC<SelectProps> = ({label, name, options, ...rest}) => {
         boolean,
         (loading: boolean) => void
       ] = React.useState<boolean>(true);
-    
-      const [error, setError]: [string, (error: string) => void] = React.useState(
-        ''
-      );
     
       React.useEffect(() => {
         axios
@@ -50,28 +46,17 @@ const Select: React.FC<SelectProps> = ({label, name, options, ...rest}) => {
           })
           .then((response) => {
             setUsers(response.data);
-            setLoading(false);
+            setLoading(true);
           })
-          .catch (ex => { 
-            const err = 
-            ex.response.status === 404 
-              ? " Recurso não encontrado " 
-              :" Ocorreu um erro inesperado "; 
-            setError (err); 
-            setLoading (false); 
-          });
        }, []);
     return (
-        <div className="select-block">
-            <label htmlFor={name}>{label}</label>
-            <select defaultValue="" id={name} {...rest}>
-                <option id="option" value="" disabled hidden>Usuários do JSONPlaceholder</option>
-               
-                {users.map(users => {
-                    return <option value={users?.label}>{users.name}</option>
-                })}
-            </select>
-        </div>
+      <>
+        <option id="option" value="" disabled hidden>Usuários do JSONPlaceholder</option>
+
+        {users.map(users => {
+          return <option value={users?.label}>{users.name}</option>
+        })}
+      </>
     );
 }
 
