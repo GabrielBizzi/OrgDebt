@@ -46,17 +46,19 @@
         justify-content: center;
         align-items: center;
     }
-    .form-content #buttons-grid a {
+    .form-content #buttons-grid button {
         text-decoration: none;
         font: 600 1.6rem Raleway;
         border-radius: 0.7rem;
         padding: 1rem 2.7rem;
-
+        outline: none;
+        cursor: pointer;
     }
     .form-content #buttons-grid #save-button {
         background: var(--color-primary-dark);
         color: var(--color-text-secondary);
         transition: background .5s;
+        border: none;
     }
     .form-content #buttons-grid #save-button:hover {
         background: var(--color-secondary);

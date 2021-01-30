@@ -1,3 +1,36 @@
+# Projeto OrgDebt, desenvolvido para o processo seletivo. 
+
+## Design - Front-end
+
+Foi desenvolvido em ReactJS, utilizando arquivos e templates em Javascript e Typescript. 
+
+Foi criado o wireframe e também a logo, por simples que seja, para dar uma "cara" ao front-end. 
+
+A aplicação é responsiva, no entanto, outras páginas não foram desenvolvidas, tais estas: 
+    - About
+    - Contact
+    - Help 
+## Funcionalidades - Back-end
+
+O back-end está estruturado em alguns arquivos .tsx e .js, admito que gastei mais do tempo proposto para desenvolver o front-end e o design do que para o back-end, que na verdade ambos deveriam estar 100% desenvolvidos. 
+
+Por agora, a aplicação tem a capacidade de puxar os dados do JSON Placeholder, e mostrar no sistema. 
+
+Ao inserir os dados no Form mostrado, clicando em salvar, é criado um novo "item", porém, este também não é atualizado em seu front-end. Ao selecionar o nome no select e clicar em deletar, o mesmo criado com o nome é deletado.
+
+Faltou a função de editar, algumas páginas e o principal, que as funcionalidades do back-end dessem retorno ao front-end. 
+
+[###] Desenvolvido por Gabriel Bizzi [###]
+
+[###] Tempo total de desenvolvimento: 26 Horas e 38 Minutos [###]
+
+[Obrigado pela oportunidade de participar no processo seletivo Fullstack.]()
+
+[Linkedin](https://www.linkedin.com/in/gabriel-bizzi/)
+
+[Github](https://github.com/GabrielBizzi)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

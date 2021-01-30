@@ -48,13 +48,13 @@ const PageList: React.FunctionComponent<PageListProps> = () => {
     return (
         <div>
             {users.map(users => {
-                return <div className="item">
+                return <button className="item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE4Xc-10pG6FTPgMJxQuTNOIrxKMd0IoPUZw&usqp=CAU" alt=""/>
                 <div className="info-item">
                     <h3>{users.name}</h3>
                     <p>R$ 0,00</p>
                 </div>
-            </div>
+            </button>
             })}
         </div>
         

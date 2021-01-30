@@ -24,7 +24,18 @@ export default class PageForm extends React.Component {
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
   }
+
+  deleteItem = event => {
+      event.preventDefault();
+
+      axios.delete(`https://jsonplaceholder.typicode.com/users/${this.state.id}`)
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+  }
   
+
   handleSubmit = event => {
     event.preventDefault();
 
@@ -69,7 +80,7 @@ export default class PageForm extends React.Component {
             <hr />
             <div id="buttons-grid">
                 <button type="submit" id="save-button">Salvar</button>
-                <button id="delete-button">Deletar</button>
+                <button onClick={this.deleteItem} id="delete-button">Deletar</button>
             </div>
         </form>
     );

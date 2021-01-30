@@ -23,11 +23,9 @@ function Home(){
                         +
                     </button>
                 </div>
-                <button type="button" className="new-debt">+ Debt</button>
+                <button type="button" id="new-debt">Debt</button>
             </div>
-        </div>
-       
-        
+        </div>   
     );
 }
 
