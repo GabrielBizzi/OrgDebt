@@ -1,4 +1,4 @@
-# Projeto OrgDebt, desenvolvido para o processo seletivo. 
+# Projeto OrgDebt.
 
 ## Design - Front-end
 
