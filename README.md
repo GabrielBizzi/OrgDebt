@@ -24,8 +24,6 @@ Faltou a função de editar, algumas páginas e o principal, que as funcionalida
 
 [###] Tempo total de desenvolvimento: 26 Horas e 38 Minutos [###]
 
-[Obrigado pela oportunidade de participar no processo seletivo Fullstack.]()
-
 [Linkedin](https://www.linkedin.com/in/gabriel-bizzi/)
 
 [Github](https://github.com/GabrielBizzi)
